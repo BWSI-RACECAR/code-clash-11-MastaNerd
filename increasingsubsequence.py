@@ -46,7 +46,8 @@ class Solution:
                 if arr[i] == arr[i-1]:
                     currSeq += 1
                     if i == len(arr) - 1:
-                         longestSeq = currSeq
+                        if longestSeq < currSeq:
+                            longestSeq = currSeq
                 else:
                     if longestSeq < currSeq:
                          longestSeq = currSeq
