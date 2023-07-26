@@ -43,7 +43,7 @@ class Solution:
             currSeq = 1
             for i in range(1, len(arr)):
                 
-                if arr[i] == arr[i-1]:
+                if arr[i] < arr[i-1]:
                     currSeq += 1
                     if longestSeq < currSeq:
                         longestSeq = currSeq
