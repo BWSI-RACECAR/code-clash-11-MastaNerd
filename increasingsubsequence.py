@@ -48,7 +48,7 @@ class Solution:
                     if i == len(arr) - 1:
                          longestSeq = currSeq
                 else:
-                    if longestSeq > currSeq:
+                    if longestSeq < currSeq:
                          longestSeq = currSeq
                     currSeq = 0
             return longestSeq
