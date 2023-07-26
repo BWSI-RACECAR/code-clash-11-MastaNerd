@@ -40,7 +40,7 @@ class Solution:
             #type arr: list of int
             #return type: int
             longestSeq = 0
-            currSeq = 0
+            currSeq = 1
             for i in range(1, len(arr)):
                 
                 if arr[i] == arr[i-1]:
@@ -50,7 +50,7 @@ class Solution:
                 else:
                     if longestSeq < currSeq:
                          longestSeq = currSeq
-                    currSeq = 0
+                    currSeq = 1
             return longestSeq
                      
 
