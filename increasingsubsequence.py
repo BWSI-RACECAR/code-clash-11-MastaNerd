@@ -39,19 +39,17 @@ class Solution:
     def find_longest_increasing_subsequence(self, arr):
             #type arr: list of int
             #return type: int
-            longestSeq = 0
-            currSeq = 1
-            for i in range(1, len(arr)):
-                
-                if arr[i] < arr[i-1]:
-                    currSeq += 1
-                    if longestSeq < currSeq:
-                        longestSeq = currSeq
-                else:
-                    if longestSeq < currSeq:
-                         longestSeq = currSeq
-                    currSeq = 1
-            return longestSeq
+            x = len(arr)
+            solArr = [1] * n
+
+            for i in range(1, n):
+                for k in range(0, i):
+                    if arr[i] > arr[j] and solArr[i] < solArr[j] + 1:
+                        solArr[i] = solArr[j] + 1
+            largSeq = 0
+            for i in solArr:
+                largSeq = max(i, largSeq)
+            return largeSeq
                      
 
 
