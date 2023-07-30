@@ -49,7 +49,7 @@ class Solution:
             largSeq = 0
             for i in solArr:
                 largSeq = max(i, largSeq)
-            return largeSeq
+            return largSeq
                      
 
 
