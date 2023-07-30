@@ -44,8 +44,8 @@ class Solution:
 
             for i in range(1, x):
                 for k in range(0, i):
-                    if arr[i] > arr[j] and solArr[i] < solArr[j] + 1:
-                        solArr[i] = solArr[j] + 1
+                    if arr[i] > arr[k] and solArr[i] < solArr[k] + 1:
+                        solArr[i] = solArr[k] + 1
             largSeq = 0
             for i in solArr:
                 largSeq = max(i, largSeq)
