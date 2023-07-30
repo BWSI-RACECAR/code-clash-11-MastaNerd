@@ -40,9 +40,9 @@ class Solution:
             #type arr: list of int
             #return type: int
             x = len(arr)
-            solArr = [1] * n
+            solArr = [1] * x
 
-            for i in range(1, n):
+            for i in range(1, x):
                 for k in range(0, i):
                     if arr[i] > arr[j] and solArr[i] < solArr[j] + 1:
                         solArr[i] = solArr[j] + 1
